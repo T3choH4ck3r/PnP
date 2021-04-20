@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "az-quick-links-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/azQuickLinks/AzQuickLinksWebPart.js",
+          "manifest": "./src/webparts/azQuickLinks/AzQuickLinksWebPart.manifest.json"
+        }
+      ]
+    },
+    "az-image-mapping-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/azImageMapping/AzImageMappingWebPart.js",
+          "manifest": "./src/webparts/azImageMapping/AzImageMappingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AzQuickLinksWebPartStrings": "lib/webparts/azQuickLinks/loc/{locale}.js",
+    "AzImageMappingWebPartStrings": "lib/webparts/azImageMapping/loc/{locale}.js"
+  }
+}
